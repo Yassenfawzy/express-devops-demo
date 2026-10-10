@@ -2,7 +2,12 @@ const express = require('express');
 const app = express();
 
 app.get('/', (req, res) => {
-  res.status(200).json({ status: 'success', message: 'DevOps Pipeline is Updated and Running Smoothly! 🚀' });
+  const env = process.env.NODE_ENV || 'development';
+  res.status(200).json({ 
+    status: 'success', 
+    message: 'DevOps Pipeline is Working Smoothly! 🚀',
+    environment: env 
+  });
 });
 
 module.exports = app;

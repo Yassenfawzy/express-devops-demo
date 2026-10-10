@@ -9,6 +9,9 @@ app.get('/', (req, res) => {
     environment: env 
   });
 });
+app.get('/health', (req, res) => {
+  res.status(200).json({ status: 'UP', timestamp: new Date() });
+});
 
 module.exports = app;
 

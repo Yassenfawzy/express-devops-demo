@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 
 app.get('/', (req, res) => {
-  res.status(200).json({ status: 'success', message: 'DevOps Pipeline is Working!' });
+  res.status(200).json({ status: 'success', message: 'DevOps Pipeline is Updated and Running Smoothly! 🚀' });
 });
 
 module.exports = app;

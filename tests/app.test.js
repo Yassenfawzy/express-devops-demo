@@ -6,6 +6,6 @@ describe('GET /', () => {
     const res = await request(app).get('/');
     expect(res.statusCode).toEqual(200);
     expect(res.body.message).toBe('DevOps Pipeline is Working Smoothly! 🚀');
-    expect(res.body).toHaveProperty('environment'); // التأكد من وجود حقل البيئة
+    expect(res.body).toHaveProperty('environment');   
   });
 });
